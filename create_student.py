@@ -18,10 +18,15 @@ print(Mike.get_student())
 
 print(course1.add_student(Mike))
 print(course1.add_student(Sulley))
-print(course1.student_list,'\n')
+#print(course1.student_list,'\n')  # Prints the student list for course1
 
+
+# This calls the 'get_course()' method which prints out the details of the given Course object
 course1.get_course()
 
+
+# Uses a function to print the student list instead
+print(course1.get_students())
 
 # ///////////////////////////
 # The code below allows the user to generate a student from their own inputs

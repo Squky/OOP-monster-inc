@@ -10,6 +10,11 @@ class Course():
         self.student_list.append(student.name)
         return f"{student.name} added as a new student!"
 
+    def get_students(self):
+        new_list = []
+        for i in self.student_list:
+            new_list.append(i)
+        return new_list
 
     # This method displys the course and its attributes in a formatted style using a dictionary
     def get_course(self):
