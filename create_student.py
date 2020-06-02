@@ -1,15 +1,27 @@
 
 from student_monster import *
+from create_course import *
+# Create some students
+Sulley = Student("Sulley",1234,"green",4321,["Loud Roar"])
 
+Mike = Student("Mike",6789,"No Fur",9876,["Lound and obnoxious","Expert in complaining"])
 
-Sulley = Student("Sulley",1234,"green",4321,["Loud Roar"]) 
-
-print(Sulley.get_student())
-
-
+# Add/update their attributes
 Sulley.add_skills("Expert in Hand-to-hand combat")
+Mike.add_skills("Hiding behind logos")
+Mike.set_fur("Some Fur?")
 
-print(Sulley.skills)
+# Display the students and their attributes
+print(Sulley.get_student())
+print(Mike.get_student())
+
+
+print(course1.add_student(Mike))
+print(course1.add_student(Sulley))
+print(course1.student_list,'\n')
+
+course1.get_course()
+
 
 # ///////////////////////////
 # The code below allows the user to generate a student from their own inputs
